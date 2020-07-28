@@ -1,0 +1,66 @@
+<div class="container-fluid">
+  <div class="row text-light">
+    <div class="col-2 text-center bg-dark mx-1">
+      <h3>SLIDES</h3>
+    </div>
+    <div class="col text-center bg-dark mx-1">
+      <h3>PLAY BOOK</h3>
+    </div>
+    <div class="col-2 text-center bg-dark mx-1">
+      <h3>SKETCHES</h3>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-2">
+      <div class="row height-page-vh">
+        <div
+          class="col-12 text-center py-3 text-light"
+          *ngFor="let slide of slides"
+          draggable
+          [dragData]="slide"
+          [style.backgroundColor]="slide?.color"
+          style="height: 100px;"
+        ></div>
+      </div>
+    </div>
+    <div class="col-8" droppable (onDrop)="onSlideDrop($event)">
+      <div class="row height-page-vh">
+        <div
+          class="col-3 px-3 py-3 margin-rem"
+          *ngFor="let slidepics of slidePictures; let i = index"
+          [style.backgroundColor]="slidepics?.color"
+          droppable
+          (onDrop)="onPictureDrop($event, i)"
+        >
+          <div class="row">
+            <div class="col text-right">
+              <span class="text-light" *ngIf="!slidepics.blankAdd" (click)="removeSlideSketch(i)">X</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <img
+                *ngIf="slidepics.url"
+                [src]="slidepics?.url"
+                class="img-thumbnail"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-2">
+      <div class="row height-page-vh">
+        <div
+          class="col-12"
+          *ngFor="let sketch of sketches"
+          draggable
+          [dragData]="sketch"
+        >
+          <img *ngIf="sketch.url" [src]="sketch?.url" class="img-thumbnail" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
