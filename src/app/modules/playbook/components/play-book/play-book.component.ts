@@ -32,13 +32,17 @@ export class PlayBookComponent implements OnInit {
       this.slidePictures.splice(i, 0, $event.dragData);
       this.AddRemoveBlankSlide();
     }
-    if (this.slidePictures[i]['url'] || this.slidePictures[i]['blankAdd'])
+    if (this.slidePictures[i]['blankAdd'])
       return;
     this.slidePictures[i] = {
       ...this.slidePictures[i],
-      ...$event.dragData,
-      ...{ sketchId: i },
+      ...$event.dragData
     };
+  }
+
+  removeSlideSketch(index){
+    this.slidePictures.splice(index,1)
+    this.AddRemoveBlankSlide()
   }
 
   AddRemoveBlankSlide() {
