@@ -1,0 +1,32 @@
+[
+    {
+      "image_id": 0,
+      "image": "picture1",
+      "url": "assets/slide-images/classic-silver.jpg"
+    },
+    {
+      "image_id": 1,
+      "image": "picture2",
+      "url": "assets/slide-images/continental.jpg"
+    },
+    {
+      "image_id": 2,
+      "image": "picture3",
+      "url": "assets/slide-images/himalayan.jpg"
+    },
+    {
+      "image_id": 3,
+      "image": "picture4",
+      "url": "assets/slide-images/thunderbird-350.jpg"
+    },
+    {
+      "image_id": 4,
+      "image": "picture5",
+      "url": "assets/slide-images/classic-gunmetal.jpg"
+    },
+    {
+      "image_id": 5,
+      "image": "picture6",
+      "url": "assets/slide-images/classic-stealth.jpg"
+    }
+  ]

@@ -1,0 +1,50 @@
+[
+    {
+      "id": 0,
+     "name": "slide1",
+      "color": "blue",
+      "type": "slide"
+    },
+    {
+      "id": 1,
+     "name": "slide2",
+      "color": "green",
+      "type": "slide"
+    },
+    {
+      "id": 2,
+     "name": "slide3",
+      "color": "yellow",
+      "type": "slide"
+    },
+    {
+      "id": 3,
+     "name": "slide4",
+      "color": "red",
+      "type": "slide"
+    },
+    {
+      "id": 4,
+     "name": "slide5",
+      "color": "purple",
+      "type": "slide"
+    },
+    {
+      "id": 5,
+     "name": "slide6",
+      "color": "orange",
+      "type": "slide"
+    },
+    {
+      "id": 6,
+     "name": "slide7",
+      "color": "beige",
+      "type": "slide"
+    },
+    {
+      "id": 7,
+     "name": "slide8",
+      "color": "LightGray",
+      "type": "slide"
+    }
+  ]
