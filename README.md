@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.4.
 
 ## Setup Instructions
-Take clone of the repository and switch to master branch. open the folder and open command line from that folder and install required node modules using the command `npm install`.
+Take clone of the repository and switch to `master` branch. open the folder and open command line from that folder and install required node modules using the command `npm install`.
 
 ## Development server
 
